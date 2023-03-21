@@ -5,12 +5,12 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 FROM node:14
 
-WORKDIR /usr/src/app
+WORKDIR .
 
 COPY package*.json ./
 
-RUN rm -rf node_modules package-lock.json && npm install
+RUN npm install
 
 COPY . .
 
-CMD [ "node", "install.js" ]
+CMD [ "node", "app.js" ]
