@@ -9,6 +9,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
+RUN npm install -g npm@latest
+
 RUN rm -rf node_modules && npm install
 
 COPY . .
