@@ -7,10 +7,10 @@ FROM node:14
 
 WORKDIR /usr/src/app
 
-RUN npm init -y
+COPY package*.json ./
+
 RUN npm install
 
-COPY package*.json ./
 
 COPY . .
 
