@@ -5,7 +5,7 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 FROM node:14
 
-WORKDIR /usr/src/app
+WORKDIR /usr/app
 
 RUN npm install
 
