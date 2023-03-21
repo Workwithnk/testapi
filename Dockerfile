@@ -13,4 +13,4 @@ RUN rm -rf node_modules package-lock.json && npm install
 
 COPY . .
 
-CMD [ "node", "app.js" ]
+CMD [ "node", "install.js" ]
