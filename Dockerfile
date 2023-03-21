@@ -9,9 +9,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install -g npm@latest
 
-RUN rm -rf node_modules && npm install
+RUN sudo rm -rf node_modules package-lock.json && npm install
 
 COPY . .
 
