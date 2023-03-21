@@ -3,7 +3,7 @@ const app = express();
 
 const getElementDetails = require("./getElemetDetails");
 
-app.get("/", async function (req, res) {
+app.get("/new", async function (req, res) {
   let customSelector = `body p`;
   await getElementDetails(
     "https://nikhil-kavathiya-4a985.web.app/",
