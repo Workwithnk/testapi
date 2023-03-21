@@ -1,4 +1,12 @@
 {
+  
+  "version": 2,
+  "builds": [
+    {
+      "scr": "./app.js",
+      "use": "@vercel/node"
+    }
+  ],
   "functions": {
     "app.js": {
       "memory": 3008,
