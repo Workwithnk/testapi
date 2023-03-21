@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const getElementDetails = require("./functions/getElemetDetails");
+const getElementDetails = require("./getElemetDetails");
 
 // Wrapping the Puppeteer browser logic in a GET request
 app.get("/", async function (req, res) {
