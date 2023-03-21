@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 const chromium = require("chrome-aws-lambda");
-
+require("dotenv").config()
 async function checkRunner(viewPortWidth, viewPortHeight) {
   
   const browser = await puppeteer.launch({
