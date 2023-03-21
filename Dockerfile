@@ -7,7 +7,7 @@ FROM node:14
 
 WORKDIR /usr/src/app
 
-RUN npm init
+RUN npm init -y
 RUN npm install
 
 COPY package*.json ./
