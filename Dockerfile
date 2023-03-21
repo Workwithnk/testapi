@@ -5,7 +5,9 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 FROM node:14
 
+WORKDIR /usr/src/app
 
+RUN npm init
 RUN npm install
 
 COPY package*.json ./
