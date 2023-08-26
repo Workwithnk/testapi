@@ -13,7 +13,7 @@ async function checkRunner(viewPortWidth, viewPortHeight) {
 			ignoreHTTPSErrors: true
 		});
 
-		// trthi
+		// this is by nk
 	}
 
 	return (browser = await chromium.puppeteer.launch({
